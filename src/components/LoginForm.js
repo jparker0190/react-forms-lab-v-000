@@ -21,7 +21,7 @@ class LoginForm extends React.Component {
     console.log('submitting')
     const name = this.state.username;
     const password = this.state.password;
-    
+
     if (name.length>0 && password.length > 0) {
       this.props.onSubmit({username: name, password: password});
     }
@@ -34,9 +34,9 @@ class LoginForm extends React.Component {
           <label>
             Username
             <input value={this.state.username}
-                  onChange={this.handleInputChange} 
+                  onChange={this.handleInputChange}
                   name='username'
-                  id="test-username" 
+                  id="test-username"
                   type="text"
             />
           </label>
@@ -44,11 +44,11 @@ class LoginForm extends React.Component {
         <div>
           <label>
             Password
-            <input value={this.state.password} 
+            <input value={this.state.password}
                     onChange={this.handleInputChange}
                     name='password'
-                    id="test-password" 
-                    type="password" 
+                    id="test-password"
+                    type="password"
               />
           </label>
         </div>
